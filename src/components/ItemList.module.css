@@ -1,0 +1,201 @@
+.h2{
+    color: #777F98;
+    font-size: 18px;
+    letter-spacing: -0.375px;
+    margin-bottom: 14px;
+}
+
+.ul{
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bodyTextVariant{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+.h3Variant{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.input{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    margin-bottom: 18px;
+    height: 48px;
+    padding: 0;
+    padding-left: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.itemListLabels{
+    color: #7E88C3;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.columnOne{
+    width: 42.46%;
+    margin-right: 3.17%
+}
+
+.columnTwo{
+    width: 9.13%;
+    margin-right: 3.17%;
+}
+
+.columnThree{
+    width: 19.84%;
+    margin-right: 3.17%
+}
+
+.columnFour{
+    width: 16%;
+}
+
+.columnFive{
+    width: 13px;
+}
+
+.itemTotal{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    height: 48px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+.itemTotalLight{
+  color: #888EB0;
+}
+
+.itemTotalDark{
+    color: #fff;
+    background-color: #141625;
+}
+
+.iconDelete{
+    fill: #888EB0;
+    height: 16px;
+    width: auto;
+    margin-bottom: 18px;
+}
+
+.iconDelete:hover{
+    transform: scale(1.1)
+}
+
+.iconDelete:active{
+    transform: scale(0.9)
+}
+
+.itemListLabels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button{
+    width: 100%;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    margin-bottom: 39px;
+}
+
+.button:active{
+    transform: scale(0.92)
+}
+
+.buttonLight{
+    color: #7E88C3;
+    background-color: #F8F8FB;
+}
+
+.buttonLight:hover{
+    background-color: #DFE3FA;
+}
+
+.buttonDark{
+    color: #DFE3FA;
+    background-color: #252945;
+}
+
+.buttonDark:hover{
+    background-color: #1E2139;
+
+}
+
+.inputLight{
+    color: #0C0E16;
+    border: 1px solid #DFE3FA;
+}
+
+.inputDark{
+    color: #ffffff;
+    background-color: #1E2139;
+    border: 1px solid #252945;
+}
+
+.labelLight{
+    color: #7E88C3;
+}
+
+.labelDark{
+    color: #DFE3FA;
+}
+
+.inputVariantLight{
+    color: #888EB0;
+    padding: 0;
+    border: none;
+}
+
+.inputVariantDark{
+    color: #DFE3FA;
+    padding: 0;
+    border: none;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
