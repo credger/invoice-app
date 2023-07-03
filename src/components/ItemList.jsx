@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import styles from './ItemList.module.css'
-import setTheme from '../functions/setTheme'
+import setThemeClassNames from '../functions/setThemeClassNames'
 import addItem from '../functions/addItem'
 import deleteItem from '../functions/deleteItem'
 import iconDelete from '../assets/icon-delete.svg'
@@ -30,7 +30,7 @@ const ItemList = (props) => {
   const firstItem = new Item
   const [items, setItems] = useState([firstItem])  
 
-  const classNames = setTheme(props.theme, lightClassNames, darkClassNames)
+  const classNames = setThemeClassNames(props.theme, lightClassNames, darkClassNames)
 
   const handleClickAddItem=()=>{
     const newItems = addItem(items)

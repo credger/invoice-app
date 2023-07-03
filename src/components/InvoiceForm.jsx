@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './InvoiceForm.module.css'
-import setTheme from '../functions/setTheme'
+import setThemeClassNames from '../functions/setThemeClassNames'
 import ItemList from './ItemList'
 import Invoice from '../classes/Invoice'
 import { useState } from 'react'
@@ -26,7 +26,7 @@ const InvoiceForm = (props) => {
 
 const [invoice, setInvoice] = useState(new Invoice)
 
-const classNames = setTheme(props.theme, lightClassNames, darkClassNames)
+const classNames = setThemeClassNames(props.theme, lightClassNames, darkClassNames)
 
 
 const handleChange = (event) => {

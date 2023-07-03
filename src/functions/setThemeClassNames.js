@@ -1,4 +1,4 @@
-const setTheme = (theme, lightClassNames, darkClassNames) => {
+const setThemeClassNames = (theme, lightClassNames, darkClassNames) => {
 
     let classNames
     switch(theme){
@@ -12,4 +12,4 @@ const setTheme = (theme, lightClassNames, darkClassNames) => {
     return classNames
 }
 
-export default setTheme
+export default setThemeClassNames
