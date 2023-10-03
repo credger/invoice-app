@@ -1,3 +1,78 @@
+.parentContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.7);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.formContainer{
+    width: 100%;
+    height: 100%;
+    max-width: 719px;
+    top: 0;
+    left: 0;
+    border-radius: 0 20px 20px 0;
+    z-index: 4;
+    overflow: hidden;
+ 
+}
+
+.scroll{
+    width: calc(100% - 191px);
+    margin-left: 159px;
+    height: calc(100vh - 90px);
+    overflow: auto;
+    margin-top: 40px;
+}
+
+.scrollLight{
+    background-color: transparent;
+
+}
+
+.scrollLight::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+
+}
+
+.scrollLight::-webkit-scrollbar-thumb{
+    background: #DFE3FA;
+    border-radius: 4px;
+}
+
+
+.scrollDark{
+    background-color: transparent;
+}
+
+.scrollDark::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+
+}
+
+.scrollDark::-webkit-scrollbar-thumb{
+    background: #252945;
+    border-radius: 4px;
+}
+
+
+
+.formContainerLight{
+    background-color: #FFFFFF;
+
+}
+
+.formContainerDark{
+    background-color: #141625;
+}
+
+
 .h3{
     margin: 0 0 24px 0;
     color: #7C5DFA;
@@ -7,15 +82,28 @@
     margin: 0 0 24px 0;
 }
 
+.formTitle{
+    margin-bottom: 24px;
+}
+
+.formTitleLight{
+    color: #0C0E16;
+}
+
+.formTitleDark{
+    color: #fff;
+}
+
 .form{
+    width: calc(100% - 16px);
     max-width: 504px;
     height: fit-content;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .label{
-    margin-bottom: 9px;
-    
+    margin-bottom: 9px;    
+    margin-left: 2px;
 }
 
 .input{
@@ -27,10 +115,15 @@
     margin-bottom: 25px;
     height: 48px;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 10px;
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
+}
+
+.input:focus{
+    outline: none;
+    border: 2px solid #7C5DFA;
 }
 
 .inputOnePerRow{
@@ -43,7 +136,9 @@
     display: flex;
     flex-direction: column;
     width: 47.62%;
-    /* min-width: 182.86px; */
+    height: fit-content;
+    min-width: 150px;
+    position: relative;
 }
 
 .inputThreePerRow{
@@ -52,52 +147,49 @@
     width: 30.16%;
 }
 
-.formRow{
+.inputCity{
+    width: calc(100% - 192px);
+    min-width: 200px;
+    margin-right: 16px;
+}
+
+.inputState{
+    width: 60px; 
+    margin-right: 16px; 
+}
+
+.StateZipContainer{
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.inputZipCode{
+    width: 100px;
+}
+
+.formRow{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .formButton{
     height: 48px;
     border-radius: 24px;
     border: none;
-
+    margin: 8px 8px 8px 0;
     font-size: 15px;
     font-family: 'League Spartan', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 15px;
     letter-spacing: -0.25px;
-}
-
-.discard{
-    background-color: #F9FAFE;
-    color: #7E88C3;
-    width: 96px;
-    margin-right: 27.58%;
-}
-
-.saveDraft{
-    background-color: #373B53 ;
-    width: 133px;
-    margin-right: 1.59%
-}
-
-.saveDraftLight{
-    color: #888EB0;
-}
-
-.saveDraftDark{
-    color: #DFE3FA;
-}
-
-.saveSend{
-    background-color: #7C5DFA;
-    color: #FFFFFF;
-    width: 128px;
-
+    cursor: pointer;
 }
 
 .formLight{
@@ -119,6 +211,17 @@
     border: 1px solid #252945;
 }
 
+.inputErrorLight{
+    color: #0C0E16;
+    border: 1px solid #EC5757;
+}
+
+.inputErrorDark{
+    color: #ffffff;
+    background-color: #1E2139;
+    border: 1px solid #EC5757;
+}
+
 .labelLight{
     color: #7E88C3;
 }
@@ -127,5 +230,49 @@
     color: #DFE3FA;
 }
 
+.dropdownContainer{
+    height: 96.99px;
+}
+
+
+@media (max-width: 800px), (orientation: portrait){
+    .formContainer{
+        width: 100%;
+        max-width: 800%;
+        height: 100%;
+        border-radius: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .scroll{
+        width: calc(100% - 32px);
+        overflow: auto;
+        margin-top: 112px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    .form{
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 675px){
+    .inputCity{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+}
 
 

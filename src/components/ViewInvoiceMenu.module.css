@@ -1,0 +1,239 @@
+.parentContainer{
+    height: fit-content;
+    min-height: 88px;
+    max-width: 730px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+.parentContainerLight{
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+}
+
+.parentContainerDark{
+    background-color: #1E2139;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+}
+
+.statusInformation{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.bodyText{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+
+.status{
+    margin: 0 20px 0 32px;
+}
+
+.statusLight{
+    color: #858BB2;
+}
+
+.statusDark{
+    color: #DFE3FA;
+}
+
+.buttonBox{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 28px 8px 0px;
+}
+
+.editButton{
+    width: 73px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+
+.editButtonLight{
+    color: #7E88C3;
+    background-color: #F9FAFE;
+}
+
+.editButtonDark{
+    color: #DFE3FA;
+    background-color: #252945;
+}
+
+.editButtonLight:hover{
+    background-color: #DFE3FA;
+}
+
+.editButtonDark:hover{
+    background-color: #43486A;
+}
+
+.editButton:active{
+    transform: scale(0.9)
+}
+
+
+.deleteButton{
+    width: 89px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    color: #FFFFFF;
+    background-color: #EC5757;
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+
+.deleteButton:hover{
+    background-color: #FF9797;
+}
+
+.deleteButton:active{
+    transform: scale(0.9)
+}
+
+.markAsPaidButton{
+    width: 131px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    color: #FFFFFF;
+    background-color: #7C5DFA;
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+
+.markAsPaidButton:hover{
+    background-color: #9277FF;
+}
+
+.markAsPaidButton:active{
+    transform: scale(0.9)
+}
+
+.markAsPendingButton{
+    width: 131px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    color: #FFFFFF;
+    background-color: #7C5DFA;
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+
+.markAsPendingButton:hover{
+    background-color: #9277FF;
+}
+
+.markAsPendingButton:active{
+    transform: scale(0.9)
+}
+
+.copyDraftButton{
+    width: 120px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+
+
+.copyDraftButtonLight{
+    color: #7E88C3;
+    background-color: #F9FAFE;
+}
+
+.copyDraftButton:active{
+    transform: scale(0.9)
+}
+
+.copyDraftButtonDark{
+    color: #DFE3FA;
+    background-color: #252945;
+}
+
+.copyDraftButtonLight:hover{
+    background-color: #DFE3FA;
+}
+
+.copyDraftButtonDark:hover{
+    background-color: #43486A;
+}
+
+.h3Variant{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+
+.mobileHidden{
+    display: inline;
+}
+
+.margin0px{
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .parentContainer {
+        left: 120px;
+    }
+}
+
+@media (max-width: 675px) {
+    .parentContainer{
+        border-radius: 0;
+    }
+
+    .editButton{
+        width: 68px;
+        height: 48px;
+    }
+
+    .deleteButton{
+        width: 72px;
+        height: 44px;
+    }
+
+    .markAsPaidButton{
+        width: 116px;
+        height: 44px;
+    }
+
+    .mobileHidden{
+        display: none;
+    }
+
+    .buttonBox{
+        width: 100%;
+        margin: 8px 0px 8px 0px;
+    }
+
+    .statusInformation{
+        display: none;
+    }
+}

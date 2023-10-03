@@ -1,3 +1,7 @@
+.parentContainer{
+    width: 100%;
+}
+
 .h2{
     color: #777F98;
     font-size: 18px;
@@ -9,6 +13,7 @@
     padding: 0;
     margin-top: 15px;
     margin-bottom: 0px;
+    width: 100%;
 }
 
 .li{
@@ -16,6 +21,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .bodyTextVariant{
@@ -43,10 +50,15 @@
     margin-bottom: 18px;
     height: 48px;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 10px;
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
+}
+
+.input:focus{
+    outline: none;
+    border: 2px solid #7C5DFA;
 }
 
 .itemListLabels{
@@ -57,26 +69,31 @@
 }
 
 .columnOne{
-    width: 42.46%;
-    margin-right: 3.17%
+    width: 42%;
+    min-width: 180px;
+    margin-right: 8px;
 }
 
 .columnTwo{
-    width: 9.13%;
-    margin-right: 3.17%;
+    width: 10%;
+    min-width: 46px;
+    margin-right: 8px;
 }
 
 .columnThree{
-    width: 19.84%;
-    margin-right: 3.17%
+    width: 16%;
+    min-width: 72px;
+    margin-right: 8px;
 }
 
 .columnFour{
     width: 16%;
+    min-width: 72px;
 }
 
 .columnFive{
-    width: 13px;
+    width: 36px;
+    min-width: 36px;
 }
 
 .itemTotal{
@@ -86,6 +103,7 @@
     line-height: 15px;
     letter-spacing: -0.25px;
     height: 48px;
+    width: 100%;
     margin-bottom: 18px;
     display: flex;
     flex-direction: row;
@@ -104,18 +122,42 @@
     background-color: #141625;
 }
 
-.iconDelete{
-    fill: #888EB0;
-    height: 16px;
-    width: auto;
+.deleteIconContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 36px;
     margin-bottom: 18px;
+    cursor: pointer;
+    position: relative;
 }
 
-.iconDelete:hover{
-    fill: #EC5757;
+.clickContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
 }
 
-.iconDelete:active{
+.iconDelete{
+    filter: invert(61%) sepia(11%) saturate(807%) hue-rotate(194deg) brightness(92%) contrast(85%);
+    height: 16px;
+    margin-bottom: 3px;
+    width: auto;
+    z-index: 9;
+
+}
+
+.clickContainer:hover ~.iconDelete{
+    filter: invert(68%) sepia(100%) saturate(3914%) hue-rotate(323deg) brightness(91%) contrast(106%);
+}
+
+
+.clickContainer:active ~.iconDelete{
     transform: scale(0.9)
 }
 
@@ -167,12 +209,25 @@
     border: 1px solid #252945;
 }
 
+.inputErrorLight{
+    color: #0C0E16;
+    border: 1px solid #EC5757;
+}
+
+.inputErrorDark{
+    color: #ffffff;
+    background-color: #1E2139;
+    border: 1px solid #EC5757;
+}
+
 .labelLight{
     color: #7E88C3;
+    margin-left: 2px;
 }
 
 .labelDark{
     color: #DFE3FA;
+    margin-left: 2px;
 }
 
 .inputVariantLight{
@@ -188,6 +243,38 @@
 }
 
 
+.inputContainer{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+
+}
+
+.visuallyHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+.flexItem{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.mobileLabels{
+    margin: 16px 0 0 0;
+    display: none;
+}
+
+
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -198,4 +285,39 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@media (max-width: 550px){
+    .columnOne{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .itemListLabels{
+        display: none;
+    }
+
+    .input{
+        margin-bottom: 0;
+    }
+
+    .itemTotal{
+        margin-bottom: 0;
+    }
+    
+    .li{
+        margin-bottom: 20px;
+        justify-content: left;
+    }
+
+    .mobileLabels{
+        margin: 16px 0 0 0;
+        display: block;
+    }
+    
+    .deleteIconContainer{
+        margin-bottom: 0px;
+        margin-top: 28px;
+    }
+
 }

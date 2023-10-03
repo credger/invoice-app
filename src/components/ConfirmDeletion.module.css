@@ -1,0 +1,146 @@
+.parentContainer{
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgb(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.popUpContainer{
+    width: calc(100% - 48px);
+    max-width: 480px;
+    height: 248px;
+    border-radius: 8px;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popUpContainerLight{
+    background-color: #FFFFFF;
+}
+
+.popUpContainerDark{
+    background-color: #1E2139;
+}
+
+.contentContainer{
+    width: calc(100% - 64px);
+    height: fit-content;
+}
+
+.headingLight{
+    color: #0C0E16;
+}
+
+.headingDark{
+    color: #FFFFFF;
+}
+
+
+
+.bodyText{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+.text{
+    margin-top: 8px;
+}
+
+.textLight{
+    color: #888EB0;
+}
+
+.textDark{
+    color: #DFE3FA;
+}
+
+.cancelButton{
+    width: 91px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    margin-right: 16px;
+    margin-left: 5%;
+
+}
+
+
+.cancelButtonLight{
+    background-color: #F9FAFE;
+    color: #7E88C3;
+}
+
+.cancelButtonDark{
+    background-color: #252945;
+    color: #DFE3FA;
+}
+
+.cancelButtonLight:hover{
+    background-color: #DFE3FA;
+}
+
+.cancelButtonDark:hover{
+    background-color: #43486A;
+}
+
+.cancelButtonLight:active{
+    transform: scale(0.9)
+}
+
+.cancelButtonDark:active{
+    transform: scale(0.9)
+}
+
+
+.deleteButton{
+    width: 91px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background-color: #EC5757;
+    color: #FFFFFF;
+    margin-right: 5%;
+}
+
+.deleteButton:hover{
+    background-color: #FF9797;
+}
+
+.deleteButton:active{
+    transform: scale(0.9)
+}
+
+.buttonContainer{
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    
+}
+
+.h3Variant{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+

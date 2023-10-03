@@ -3,10 +3,10 @@ import { nanoid } from "nanoid"
 class Item {
     constructor() {
         this.id = nanoid()
-        this.name = null
-        this.quantity = null
-        this.price = null
-        this.total = 0
+        this.name = ''
+        this.quantity = ''
+        this.price = ''
+        this.total = '0.00'
     }
 }
 

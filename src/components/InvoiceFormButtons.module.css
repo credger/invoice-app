@@ -1,0 +1,69 @@
+.formRow{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.formButton{
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    margin: 8px 8px 8px 0;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    cursor: pointer;
+}
+
+.formButton:active{
+    transform: scale(0.9)
+}
+
+.discard{
+    background-color: #F9FAFE;
+    color: #7E88C3;
+    width: 96px;
+    /* margin-right: 27.58%; */
+}
+
+.discard:hover{
+    background-color: #DFE3FA;
+}
+
+.saveDraft{
+    width: 133px;
+}
+
+
+.saveDraftLight{
+    background-color: #373B53 ;
+    color: #888EB0;
+}
+
+.saveDraftDark{
+    background-color: #373B53 ;
+    color: #DFE3FA;
+}
+
+.saveDraftLight:hover{
+    background-color: #0C0E16;
+}
+
+.saveDraftDark:hover{
+    background-color: #1E2139;
+}
+
+.saveSend{
+    background-color: #7C5DFA;
+    color: #FFFFFF;
+    width: 128px;
+}
+
+.saveSend:hover{
+    background-color: #9277FF;
+}

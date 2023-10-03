@@ -1,0 +1,236 @@
+.parentContainer{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 112px;
+    width: 100%;
+    z-index: 1;   
+}
+
+.h3{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    margin: 0;
+}
+
+.li{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    min-height: 72px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.liColorsLight{
+    background-color: #FFF;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+}
+
+.liColorsDark{
+    background-color: #1E2139;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+}
+
+.id{
+    margin-left: 32px;
+    width: 14%;
+}
+
+.idLight{
+    color: #0C0E16;
+    overflow: hide;
+}
+
+.idDark{
+    color: #fff;
+    overflow: hide;
+
+}
+
+.dueDate{
+    width: 22%;
+}
+
+.dueDateLight{
+    color: #858BB2
+}
+
+.dueDateDark{
+    color: #DFE3FA;
+}
+
+.clientName{
+    width: 18%;
+    overflow: hidden;
+    text-overflow: hidden;
+}
+
+.clientNameLight{
+    color: #858BB2;
+}
+
+.clientNameDark{
+    color: #fff;
+
+}
+
+.invoiceTotal{
+    width: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.invoiceTotalLight{
+    color:#0C0E16;
+}
+
+.invoiceTotalDark{
+    color: #fff;
+}
+
+.h3Variant{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.poundSignLight{
+    color: #7E88C3;
+}
+
+.poundSignDark{
+    color: #888EB0;
+}
+
+.bodyTextVariant{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+.arrowContainer{
+    width: 9%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewInvoiceButton{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.iconArrowRight{
+    width: 6px;
+    height: auto;
+}
+
+.viewInvoiceButton:hover {
+    border: 1px solid #7C5DFA;
+}
+
+.statusBox{
+    margin-left: 40px;
+}
+
+
+@media (max-width: 600px){
+    .parentContainer{
+        max-width: 380px;
+    }
+
+    .li{
+        height: 134px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 24px 1fr 1fr 24px ;
+        grid-template-rows: 24px 1fr 1fr 1fr 24px ;
+        grid-template-areas:
+            ". . . ."
+            ". id name ."
+            ". date status ."
+            ". total status ."
+            ". . . ."
+    }
+
+    .id{
+        grid-area: id;
+        margin: -4px 0 0 0;
+        width: 100%;
+        align-self: start;
+    }
+
+    .dueDate{
+        width: 100%;
+        margin: 2px 0 0 0;
+        grid-area: date;
+        align-self: center;
+
+    }
+
+    .clientName{
+        width: 100%;
+        margin: 0;
+        grid-area: name;
+        text-align: right;
+        justify-self: end;
+        align-self: start;
+    }
+
+    .arrowContainer{
+        display: none;
+    }
+
+    .invoiceTotal{
+        grid-area: total;
+        width: 100%;
+        margin: 0 0 -4px 0;
+        display: block;
+        justify-self:start;
+        align-self: end;
+    }
+
+    .statusBox{
+        width: 104px;
+        height: 40px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        grid-area: status;
+        justify-self: end;
+        align-self: end;
+    }
+
+
+}

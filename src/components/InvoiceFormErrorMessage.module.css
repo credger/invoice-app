@@ -1,0 +1,20 @@
+.errorMessageContainer{
+    width: calc(100% - 16px);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.errorMessage{
+    font-family: League Spartan;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px; /* 150% */
+    letter-spacing: -0.208px;
+    color: #EC5757;
+    margin: 5px 0 5px 0;
+}

@@ -1,0 +1,66 @@
+.parentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.h3Variant{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.statusLight{
+    color: #858BB2;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    margin: 0 20px 0 32px;
+}
+
+.statusDark{
+    color: #DFE3FA;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    margin: 0 20px 0 32px;
+}
+
+.statusBox{
+    width: 104px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.statusDraftLight{
+    background-color: rgba(55, 59, 83, 0.06);
+    color: #373B53;
+}
+
+.statusDraftDark{
+    background-color: rgba(223, 227, 250, 0.06);
+    color: #DFE3FA
+}
+
+.statusPending{
+    background-color: rgba(255, 143, 0, 0.06);
+    color: #FF8F00;
+}
+
+.statusPaid{
+    background-color: rgba(51, 214, 159, 0.06);
+    color: #33D69F;
+}
+

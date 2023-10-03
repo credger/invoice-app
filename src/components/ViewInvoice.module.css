@@ -1,0 +1,379 @@
+.parentContainer{
+    max-width: 730px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.parentContainerLight{
+    background-color: #fff;
+}
+
+.parentContainerDark{
+    background-color: #1E2139;
+}
+
+.invoiceHeader{
+    height: fit-content;
+    width: 87%;
+    margin-top: 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.invoiceID{
+    height: fit-content;
+    width: fit-content;
+    max-height: 100px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.bodyText{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+.textLight{
+    color: #7E88C3;
+}
+
+.textDark{
+    color: #DFE3FA;
+}
+
+.h3{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    margin: 0;
+}
+
+.h3Variant{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.h3ColorLight{
+    color: #0C0E16;
+}
+
+.h3ColorDark{
+    color: #fff;
+}
+
+.poundSign{
+    color: #888EB0;
+}
+
+.addressContainerOne{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+   
+}
+
+.addressContainerTwo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.invoiceDetails{
+    margin-top: 21px;
+    width: 87%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.invoiceDates{
+    height: fit-content;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    grid-area: date;
+}
+
+.containerHeight36px{
+    height: fit-content;
+    min-height: 36px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 4px;
+}
+
+.clientAddress{
+    margin-top: 16px;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    grid-area: address;
+}
+
+.marginTop16px{
+    margin-top: 16px;
+}
+
+.customerEmail{
+    width: fit-content;
+    overflow: hidden;
+    grid-area: email;
+    margin-top: 20px;
+   
+}
+
+.itemListContainer{
+    width: 87%;
+    height: fit-content;
+    margin-top: 20px;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.itemListContainerLight{
+    background-color:#F9FAFE;
+}
+
+.itemListContainerDark{
+    background-color: #252945;
+}
+
+.amountDueContainer{
+    height: fit-content;
+    min-height: 80px;
+    width: 87%;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+
+.amountDueContainerLight{
+    background-color: #373B53;
+}
+
+.amountDueContainerDark{
+    background-color: #0C0E16;
+}
+
+.itemRow{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 32px;
+}
+
+.itemName{
+    width: 42%;
+}
+
+.itemQuantity{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.itemPrice{
+    width: 22%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    overflow: hidden;
+}
+    
+.itemTotal{
+    width: 26%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.marginTop32px{
+    margin-top: 32px;
+}
+
+.itemListColorOneLight{
+    color: #0C0E16
+}
+
+.itemListColorOneDark{
+    color: #FFF;
+}
+
+.itemListColorTwoLight{
+    color: #7E88C3;
+}
+
+.itemListColorTwoDark{
+    color: #DFE3FA;
+}
+
+.amountDueRow{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.h2{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+
+.amountDueText{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    margin: 0;
+}
+
+.invoiceTotalText{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    margin: 4px 0 4px 0;
+}
+
+.mobileQuantity{
+    display: none;
+}
+
+.mobileQuantityLight{
+    color: #7E88C3;
+}
+
+.mobileQuantityDark{
+    color: #888EB0;
+}
+
+.statusBox{
+    display: none;
+}
+
+@media (max-width: 675px){
+
+    .parentContainer{
+        border-radius: 0;
+
+    }
+
+    .invoiceHeader{
+        height: fit-content;
+        width: 87%;
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .statusBox{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+  
+    }
+    
+
+    .addressContainerOne{
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 20px;
+    }
+
+    .itemRow{
+        justify-content: space-between;
+    }
+
+    .itemName{
+        width: fit-content;
+    }
+
+    .itemTotal{
+        width: fit-content;
+    }
+
+    .itemQuantity{
+        display: none
+    }
+
+    .itemPrice{
+        display: none;
+    }
+
+    .mobileQuantity{
+        display: block;
+        margin: 4px 0 4px 0;
+    }
+
+    .itemListContainerLight{
+        width: 100%;
+    }
+
+    .amountDueContainer{
+        width: 100%;
+        border-radius: 0;
+    }
+
+}

@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
 
+body{
+    margin: 0 0 0 0;
+}
+
 h1{
     font-family: 'League Spartan', sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 33px;
     letter-spacing: -1px;
+    margin: 0;
 }
 
 h2{
@@ -14,14 +19,20 @@ h2{
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.5px;
+    margin: 0;
 }
 
 h3{
     font-family: 'League Spartan', sans-serif;
     font-size: 15px;
     font-weight: 700;
-    line-height: 15px;
+    line-height: 24px;
     letter-spacing: -0.25px;
+    margin: 0;
+}
+
+p{
+    margin: 0;
 }
 
 .h3Variant{
@@ -48,6 +59,70 @@ h3{
     letter-spacing: -0.1px;
 }
 
+.parentContainer{
+    width: 100vw;
+    height: 100vh;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: auto;
+}
+
+.overflowAuto{
+    overflow: auto;
+}
+
+.overflowHidden{
+    overflow: hidden;
+}
+
+.parentContainerLight{
+    background-color: #F8F8FB;
+}
+
+.parentContainerDark{
+    background-color: #141625
+}
+
+.mainContent{
+    height: fit-content;
+    width: calc(100% - 144px);
+    max-width: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    z-index: 1;
+}
+
+@media (max-width: 1000px) {
+    .mainContent {
+        left: 120px;
+    }
+}
+
+@media (max-width: 800px), (orientation: portrait){
+    .mainContent{
+        width: calc(100% - 48px);
+        left: auto;
+        top: 120px;
+    }
+}
+
+
+@media (max-width: 675px) {
+    .width100{
+        width: 100%;
+    }
+}
 
 
 
