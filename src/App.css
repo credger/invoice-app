@@ -103,6 +103,14 @@ p{
     z-index: 1;
 }
 
+.goBackContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
 @media (max-width: 1000px) {
     .mainContent {
         left: 120px;
@@ -121,6 +129,10 @@ p{
 @media (max-width: 675px) {
     .width100{
         width: 100%;
+    }
+
+    .goBackContainer{
+        margin-left: 32px;
     }
 
     

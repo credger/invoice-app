@@ -83,7 +83,9 @@ function App() {
         <div className={`${classNames.parentContainer} ${overflow}  parentContainer`}>
             {NavbarComponent}
           <div className='mainContent width100'>
-            {GoBackButtonComponent}
+            <div className='goBackContainer'>
+              {GoBackButtonComponent}
+            </div>
             {ViewInvoiceMenuComponent}
             {ViewInvoiceComponent}
           </div>
