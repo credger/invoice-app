@@ -81,7 +81,7 @@ function App() {
         overflow = 'overflowAuto'
         display = 
         <div className={`${classNames.parentContainer} ${overflow}  parentContainer`}>
-            {NavbarComponent}
+          {NavbarComponent}
           <div className='mainContent width100'>
             <div className='goBackContainer'>
               {GoBackButtonComponent}
@@ -108,10 +108,14 @@ function App() {
         overflow = 'overflowHidden'
         display = 
         <div className={`${classNames.parentContainer} ${overflow} parentContainer`}>
-          {GoBackButtonComponent}
           {NavbarComponent}
-          {ViewInvoiceMenuComponent}
-          {ViewInvoiceComponent}
+          <div className='mainContent width100'>
+            <div className='goBackContainer'>
+              {GoBackButtonComponent}
+            </div>
+            {ViewInvoiceMenuComponent}
+            {ViewInvoiceComponent}
+          </div>
           {ConfirmDeletionComponent}
         </div>
     }
