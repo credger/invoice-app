@@ -62,7 +62,7 @@ p{
 .parentContainer{
     width: 100vw;
     height: 100vh;
-    min-width: 300px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -122,6 +122,8 @@ p{
     .width100{
         width: 100%;
     }
+
+    
 }
 
 

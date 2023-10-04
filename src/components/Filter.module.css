@@ -3,7 +3,7 @@
     height: 128px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-around;
     border-radius: 8px;
     margin-left: 56%;
     
@@ -32,38 +32,32 @@
     position: relative;
 }
 
-.checkboxFalseLight{
+.checkbox{
     height: 16px;
     width: 16px;
-    background-color: #DFE3FA;
     margin-right: 13px;
-    border: 1px solid #7C5DFA;
     border-radius: 2px;
     z-index: 0;
+}
+
+.checkboxFalseLight{
+    background-color: #DFE3FA;
+    border: 1px solid #7C5DFA;
 }
 
 .checkboxFalseDark{
-    height: 16px;
-    width: 16px;
     background-color: #1E2139;
-    margin-right: 13px;
     border: 1px solid #7C5DFA;
-    border-radius: 2px;
-    z-index: 0;
 }
 
 .checkboxTrue{
-    height: 16px;
-    width: 16px;
     background-color: #7C5DFA;
     border: 1px solid #7C5DFA;
-    margin-right: 13px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
-    z-index: 0;
+
 }
 
 .iconCheck{
@@ -110,8 +104,21 @@
     margin-left: 16px;
 }
 
+@media (orientation: portrait){
+    .parentContainer{
+        width: 192px;
+        height: 160px;
+    }
+
+    .checkbox{
+        height: 24px;
+        width: 24px;
+    }
+}
+
+
 @media (max-width: 600px){
     .parentContainer{
-        width: 124px;
+        margin-left: calc((100% - 192px) / 2)
     }
 }

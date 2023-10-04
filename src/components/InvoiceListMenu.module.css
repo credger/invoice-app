@@ -20,11 +20,12 @@
   
 }
 
+
 .bodyText{
     font-family: 'League Spartan', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 15px;
     letter-spacing: -0.1px;
 }
 
@@ -142,19 +143,16 @@
     }
 
     .addInvoiceButton{
-        width: 88px;
-        height: 42px;
+        width: 104px;
     }
 
     .rightContainer{
-        width: 155px;
+        width: 40%;
+        min-width: 172px;
     }
 
     .heading{
         font-size: 28px;
     }
 
-    .filterLabel{
-        margin-right: 8px;
-    }
 }

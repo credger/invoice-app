@@ -3,19 +3,20 @@
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    height: fit-content;
+    height: 15px;
     width: 100%;
 }
 
 .button{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     width: 80px;
-    height: 15px;
+    height: 100%;
     cursor: pointer;
     border: none;
+    padding: 0;
     background-color: transparent;
     z-index: 1;
 }
@@ -39,6 +40,8 @@
 .iconArrowLeft{
     height: 8.5px;
     width: auto;
+    margin-right: 8px;
+    margin-bottom: 3px;
 }
 
 .h3Variant{
@@ -48,6 +51,9 @@
     line-height: 15px;
     letter-spacing: -0.25px;
 }
+
+
+
 
 @media (max-width: 675px) {
     .parentContainer{

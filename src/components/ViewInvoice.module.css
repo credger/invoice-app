@@ -3,7 +3,6 @@
     width: 100%;
     height: fit-content;
     margin-top: 24px;
-    margin-bottom: 24px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -306,6 +305,7 @@
 
     .parentContainer{
         border-radius: 0;
+        padding-bottom: 48px;
 
     }
 

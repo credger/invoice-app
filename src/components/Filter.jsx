@@ -16,12 +16,12 @@ const Filter = (props) => {
   const classNames = setThemeClassNames(props.theme, lightClassNames, darkClassNames)
 
   const checkboxTrue =
-    <div className={styles.checkboxTrue}>
+    <div className={`${styles.checkbox} ${styles.checkboxTrue}`}>
       <img src={iconCheck} className={styles.iconCheck} alt='icon-check'/>
     </div>
 
   const checkboxFalse = 
-    <div className={classNames.checkboxFalse}></div>
+    <div className={`${styles.checkbox} ${classNames.checkboxFalse}`}></div>
 
     
   const handleClick = (event) => {

@@ -8,6 +8,7 @@ import {isEmpty} from '../functions/utilities'
 import InvoiceFormButtons from './InvoiceFormButtons'
 import getFormErrors from '../functions/getFormErrors'
 import InvoiceFormErrorMessage from './InvoiceFormErrorMessage'
+import GoBackButton from './GoBackButton'
 
 
 const InvoiceForm = (props) => {
@@ -133,6 +134,9 @@ const InvoiceForm = (props) => {
       <div className={`${styles.formContainer} ${classNames.formContainer}`}>
         <div className={`${classNames.scroll} ${styles.scroll} `}>
         <form className={`${classNames.form} ${styles.form}`}>
+        <div className={styles.goBackContainer}>
+            <GoBackButton setInvoice={props.setInvoice} invoices={props.invoices} theme={props.theme} setScene={props.setScene} name='InvoiceList' />
+        </div>
           <h2 className={`${styles.formTitle} ${classNames.formTitle}`}>{setFormTitle()}</h2>
           <section>
             <h3 className={`'h3Variant' ${styles.h3}`}>Bill From</h3>
