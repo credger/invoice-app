@@ -1,12 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
 import styles from './ViewInvoiceMenu.module.css'
 import setThemeClassNames from '../functions/setThemeClassNames'
 import StatusBox from './StatusBox'
 import createInvoiceId from '../functions/createInvoiceId'
 import getDueDate from '../functions/getDueDate' 
 import { formatDate } from '../functions/utilities'
+import iconCheck from '../assets/icon-check.svg'
 
 const ViewInvoiceMenu = (props) => {
+
+  const [saveDraftIcon, setSaveDraftIcon] = useState(null)
+  const [clickCount, setClickCount] = useState(1)
 
   const lightClassNames = {parentContainer: styles.parentContainerLight,
     status: styles.statusLight,
@@ -83,13 +88,36 @@ const ViewInvoiceMenu = (props) => {
 
     const newInvoices = props.invoices.concat(newInvoice)
     props.setInvoices(newInvoices)
+
+    if(clickCount < 9){
+      setClickCount(clickCount+1)
+    } else{
+      setClickCount('9+')
+    }
     
-    // props.setScene('InvoiceList')
-    // props.setInvoice(new Invoice)   
+
+    let circleInnerJsx
+    if(clickCount === 1){
+      circleInnerJsx = <img src={iconCheck} className={styles.iconCheck} alt='icon-check'/>
+    } else{
+      circleInnerJsx = <p className={styles.clickCount}>{clickCount}</p>
+
+    }
+  
+    const iconCheckCircle =       
+      <div className={styles.iconCheckCircle}>
+        {circleInnerJsx}
+      </div>
+    
+    setSaveDraftIcon(iconCheckCircle)
   }
 
   const copyDraftButton = 
-    <button onClick={handleClickSaveDraft} className={`${classNames.copyDraftButton} ${styles.copyDraftButton} ${styles.h3Variant}`}>Copy as Draft</button>
+  <div className={styles.copyDraftButtonContainer}>
+      {saveDraftIcon}
+      <button onClick={handleClickSaveDraft} className={`${classNames.copyDraftButton} ${styles.copyDraftButton} ${styles.h3Variant}`}>Copy as Draft</button>
+  </div>
+
 
   const editButton = 
     <button onClick={handleClickEdit} className={`${classNames.editButton} ${styles.editButton} ${styles.h3Variant}`}>Edit</button>

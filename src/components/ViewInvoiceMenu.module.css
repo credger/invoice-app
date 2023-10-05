@@ -154,7 +154,7 @@
     height: 48px;
     border: none;
     border-radius: 24px;
-    margin: 4px 4px 4px 4px;
+    /* margin: 4px 4px 4px 4px; */
     cursor: pointer;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .copyDraftButton:active{
-    transform: scale(0.9)
+    transform: scale(0.9);
 }
 
 .copyDraftButtonDark{
@@ -196,6 +196,46 @@
 
 .margin0px{
     margin: 0;
+}
+
+.copyDraftButtonContainer{
+    position: relative;
+    width: 120px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    margin: 4px 4px 4px 4px;
+
+}
+
+.iconCheckCircle{
+    background-color: #9277FF;
+    height: 20px;
+    width: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.iconCheck{
+    width: 10px;
+    height: auto;
+}
+
+.clickCount{
+    color: #fff;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: -0.1px;
+    margin-top: 3px;
 }
 
 @media (max-width: 1000px) {
