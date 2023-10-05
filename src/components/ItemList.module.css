@@ -11,7 +11,7 @@
 
 .ul{
     padding: 0;
-    margin-top: 15px;
+    margin-top: 9px;
     margin-bottom: 0px;
     width: 100%;
 }
@@ -269,7 +269,7 @@
 }
 
 .mobileLabels{
-    margin: 16px 0 0 0;
+    margin: 16px 0 9px 0;
     display: none;
 }
 
@@ -311,7 +311,6 @@ input[type=number] {
     }
 
     .mobileLabels{
-        margin: 16px 0 0 0;
         display: block;
     }
     

@@ -155,11 +155,15 @@
     width: calc(100% - 192px);
     min-width: 200px;
     margin-right: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .inputState{
     width: 60px; 
     margin-right: 16px; 
+    display: flex;
+    flex-direction: column;
 }
 
 .StateZipContainer{
@@ -172,6 +176,8 @@
 
 .inputZipCode{
     width: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .formRow{
@@ -266,7 +272,7 @@
 
     .form{
         width: 100%;
-        margin-bottom: 96px;
+        padding-bottom: 240px;
 
     }
 
