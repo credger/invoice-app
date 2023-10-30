@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666661 8.4666661"
+   version="1.1"
+   id="svg1193"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="favicon-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1195"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showborder="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:zoom="11.313709"
+     inkscape:cx="9.8553007"
+     inkscape:cy="32.659494"
+     inkscape:window-width="2560"
+     inkscape:window-height="1375"
+     inkscape:window-x="2011"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1190">
+    <mask
+       id="mask0_1_33"
+       maskUnits="userSpaceOnUse"
+       x="0"
+       y="0"
+       width="103"
+       height="103">
+      <path
+         id="Mask_2"
+         d="m 0,0 h 83 c 11.0457,0 20,8.9543 20,20 v 63 c 0,11.0457 -8.9543,20 -20,20 H 0 Z"
+         fill="#ffffff" />
+    </mask>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3112">
+      <rect
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:0.0661459;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3114"
+         width="79.000008"
+         height="79.000008"
+         x="0.5685156"
+         y="12.504563" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-338.25849,-120.68547)">
+    <g
+       id="Rectangle Copy 3"
+       transform="matrix(0.10717299,0,0,0.10717299,338.19756,119.34532)"
+       clip-path="url(#clipPath3112)"
+       style="stroke-width:2.46874">
+      <path
+         id="Mask"
+         d="m 0,0 h 83 c 11.0457,0 20,8.9543 20,20 v 63 c 0,11.0457 -8.9543,20 -20,20 H 0 Z"
+         fill="#7c5dfa"
+         style="stroke-width:1.99524" />
+      <mask
+         id="mask1099"
+         maskUnits="userSpaceOnUse"
+         x="0"
+         y="0"
+         width="103"
+         height="103">
+        <path
+           id="path1097"
+           d="m 0,0 h 83 c 11.0457,0 20,8.9543 20,20 v 63 c 0,11.0457 -8.9543,20 -20,20 H 0 Z"
+           fill="#ffffff" />
+      </mask>
+      <g
+         mask="url(#mask0_1_33)"
+         id="g6"
+         style="stroke-width:2.46874">
+        <path
+           id="Rectangle Copy 3_2"
+           d="M 103,52 H 20 C 8.95431,52 0,60.9543 0,72 v 63 c 0,11.046 8.95431,20 20,20 h 83 z"
+           fill="#9277ff"
+           style="stroke-width:1.99524" />
+      </g>
+    </g>
+    <path
+       id="Combined Shape"
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 341.09411,122.08699 1.39771,2.80986 1.39771,-2.80986 c 0.95507,0.50293 1.60625,1.50525 1.60625,2.65966 0,1.65904 -1.34492,3.00396 -3.00396,3.00396 -1.65904,0 -3.00396,-1.34492 -3.00396,-3.00396 0,-1.15441 0.65119,-2.15673 1.60625,-2.65966 z"
+       fill="#ffffff"
+       style="fill:#ffffff;stroke-width:0.264584" />
+  </g>
+</svg>
