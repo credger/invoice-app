@@ -72,7 +72,10 @@ function App() {
         display = 
         <div className={`${classNames.parentContainer} ${overflow} parentContainer`}>
           {NavbarComponent}
-          {InvoiceListMenuComponent}
+          <div className='mainContent'>
+            {InvoiceListMenuComponent}
+            {InvoiceListComponent}
+          </div>
           {InvoiceFormComponent}    
         </div>
       break
@@ -98,8 +101,13 @@ function App() {
         display = 
         <div className={`${classNames.parentContainer} ${overflow} parentContainer`}>
           {NavbarComponent}
-          {ViewInvoiceMenuComponent}
-          {ViewInvoiceComponent}
+          <div className='mainContent width100'>
+            <div className='goBackContainer'>
+              {GoBackButtonComponent}
+            </div>
+            {ViewInvoiceMenuComponent}
+            {ViewInvoiceComponent}
+          </div>
           {InvoiceFormComponent}
         </div>
       break
